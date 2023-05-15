@@ -27,7 +27,9 @@ function output($value){
 //OR-----------------------------------------------------------------
 
 function pluck($arr, $key){
-    $result = array_map("return_name", $arr);
+    $result = array_map(function($item) use($key){
+        return $item[$key];
+    }, $arr);
     return $result;
 }
 
