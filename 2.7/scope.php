@@ -5,7 +5,7 @@ $title = 'scope';
 $greeting = 'hello, world'; //global
 $greeting2 = 'hello, world for the second time'; //global
 function greet() {
-    global $greeting, $greeting2;
+    global $greeting, $greeting2; //import global variable
     return $greeting . ' ' . $greeting2;
 }
 $result = greet();
