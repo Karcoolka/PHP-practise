@@ -1,20 +1,7 @@
 <?php
-$title = 'functions';
-
-function sum($a, $b){
-    $result = $a + $b;
-    return $result;
+if(!isset($title)){
+  $title = 'title not set';
 }
-$result = sum(1,2);
-
-function output($value){
-    echo '<pre>';
-    print_r($value) ;
-    echo '</pre>';
-}
-
-$guitars = ['Vela', 'Explorer', 'Strat'];
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,22 +21,3 @@ $guitars = ['Vela', 'Explorer', 'Strat'];
         <a class="navbar-brand" href="#">PHP Fundamentals: <?= $title; ?></a>
       </div>
     </nav>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h1 class="mt-5"></h1>
-        </div>
-      </div>
-      <div class="row">
-      <?= $result ?>
-      
-      <?php
-      output($guitars);
-      ?>
-
-      </div>
-    </div>
-  </body>
-
-</html>
