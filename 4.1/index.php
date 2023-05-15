@@ -1,11 +1,11 @@
 <?php
 
-require('functions.php');
+require('app/app.php');
 
-$title = 'hello, model';
+$data = get_data();
 
-$view_bag = [];
-$view_bag['title'] = 'This is the title';
+// $view_bag = [];
+// $view_bag['title'] = 'This is the title';
 
 
-view('index', $title);
+view('index', '');
