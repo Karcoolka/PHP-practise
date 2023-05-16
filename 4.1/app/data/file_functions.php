@@ -6,6 +6,18 @@ function get_terms(){
     return json_decode($json);
 }
 
+//validate data
+function get_term($term){
+    $terms = get_terms(); //it gives us arr of objects, so iterate:
+
+    foreach($terms as $item){
+        if($item->term == $term){
+            return $item; //if matches, return the term
+        }
+    }
+    return false;
+} 
+
 //reading a file
 function get_data(){
     $fname = CONFIG['data_file'];

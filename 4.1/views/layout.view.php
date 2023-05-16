@@ -16,6 +16,7 @@
         <a class="navbar-brand" href="#">PHP Fundamentals: <?= $view_bag['title']; ?></a>
       </div>
     </nav>
+    
     <?php
     require("$name.view.php");?>
 
